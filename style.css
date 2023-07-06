@@ -373,6 +373,10 @@ ul>li>p>span:hover {
 
 /* NAME MAGIC */
 
+.hidden {
+    display: none;
+}
+
 #roundedName span {
     font: 26px Monaco, MonoSpace;
     height: 155px;

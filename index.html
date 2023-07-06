@@ -16,8 +16,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+
+    <meta property="og:title" content="CV: Denis Karandashev, Software Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/img/Denis.png">
+    <meta property="og:url" content="https://deniskarandashev.github.io/rsschool-cv">
+    <meta property="og:description"
+        content="I a Front-end / Full stack Software Developer with experience working with Angular, JavaScript, TypeScript, HTML and CSS, Java, Spring and SQL">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Denis Karandashev, Software Developer">
+
+
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="container">
@@ -36,9 +48,11 @@
     </header>
     <main>
         <section class="container dynamic highlited">
-            <h1 hidden>Denis Karandashev</h1>
+            <h1 class="hidden">Denis Karandashev</h1>
             <div id="roundedName">
-                <div class="photo"></div>
+                <img class="photo" src="./assets/img/Denis.png" alt="Denis">
+                <!-- another implementation -->
+                <!-- <div class="photo"></div> -->
             </div>
         </section>
 
@@ -278,4 +292,5 @@
     </footer>
     <script src="./index.js"></script>
 </body>
+
 </html>
