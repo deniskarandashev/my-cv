@@ -33,23 +33,34 @@
 
 <body>
     <header class="header">
-        <nav class="container">
-            <ul>
-                <li onclick="onNavItemClick('#contacts')" id="nav_contacts"><a href="#contacts">Contacts</a></li>
-                <li onclick="onNavItemClick('#languages')" id="nav_languages"><a href="#languages">Languages</a></li>
-                <li onclick="onNavItemClick('#summary')" id="nav_summary"><a href="#summary">Summary</a></li>
-                <li onclick="onNavItemClick('#skills')" id="nav_skills"><a href="#skills">Skills</a></li>
-                <li onclick="onNavItemClick('#code')" id="nav_code"><a href="#code">Code</a></li>
-                <li onclick="onNavItemClick('#projects')" id="nav_projects"><a href="#projects">Projects</a></li>
-                <li onclick="onNavItemClick('#experience')" id="nav_experience"><a href="#experience">Experience</a>
-                </li>
-                <li onclick="onNavItemClick('#education')" id="nav_education"><a href="#education">Education</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav class="container">
+                <ul>
+                    <li onclick="onNavItemClick('#contacts')" id="nav_contacts"><a href="#contacts">Contacts</a></li>
+                    <li onclick="onNavItemClick('#languages')" id="nav_languages"><a href="#languages">Languages</a>
+                    </li>
+                    <li onclick="onNavItemClick('#summary')" id="nav_summary"><a href="#summary">Summary</a></li>
+                    <li onclick="onNavItemClick('#skills')" id="nav_skills"><a href="#skills">Skills</a></li>
+                    <li onclick="onNavItemClick('#code')" id="nav_code"><a href="#code">Code</a></li>
+                    <li onclick="onNavItemClick('#projects')" id="nav_projects"><a href="#projects">Projects</a></li>
+                    <li onclick="onNavItemClick('#experience')" id="nav_experience"><a href="#experience">Experience</a>
+                    </li>
+                    <li onclick="onNavItemClick('#education')" id="nav_education"><a href="#education">Education</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main>
-        <section class="container dynamic highlited">
-            <h1 class="hidden">Denis Karandashev</h1>
+        <section class="container section small-screen">
+            <h1>Denis Karandashev</h1>
+            <h2>Software Developer</h2>
+        </section>
+
+        <section class="container section dynamic highlited big-screen">
+            <!-- every section should contain h element -> https://validator.w3.org/ -->
+            <h2 class="small-screen">Denis Karandashev</h2>
             <div id="roundedName">
                 <img class="photo" src="./assets/img/Denis.png" alt="Denis">
                 <!-- another implementation -->
@@ -282,14 +293,17 @@
         <div onclick="goToTop()" class="arrow-up">Up!</div>
     </main>
     <footer>
-        <ul>
-            <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/deniskarandashev">GitHub</a>
-            </li>
-            <li>2023</li>
-            <li><a href="https://rs.school/js/">
-                    <div class="rs-school"></div>
-                </a></li>
-        </ul>
+        <div>
+            <ul>
+                <li><i class="fa fa-github" aria-hidden="true"></i><a
+                        href="https://github.com/deniskarandashev">GitHub</a>
+                </li>
+                <li>2023</li>
+                <li><a href="https://rs.school/js/">
+                        <div class="rs-school"></div>
+                    </a></li>
+            </ul>
+        </div>
     </footer>
     <script src="./index.js"></script>
 </body>
