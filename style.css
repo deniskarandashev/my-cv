@@ -42,7 +42,7 @@ h3 {
 }
 
 nav>ul>li>a {
-    color: antiquewhite;
+    color: antiquewhite!important;
 }
 
 /* .container {
