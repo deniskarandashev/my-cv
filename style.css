@@ -1,0 +1,460 @@
+* {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ;
+}
+header, footer {
+    background-color: beige;
+    border-radius: 10px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+:root {
+    --border-1: 3px solid magenta;
+    --brown: #8C0004;
+    --max-width: 1200px;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.li-header {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+nav>ul>li>a {
+    color: antiquewhite!important;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 10px auto;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dynamic {
+    transition-duration: 1s;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.dynamic:active {
+    background-color: #E8A735;
+    transition-duration: 1s;
+    transform: scale(1.3);
+}
+
+.dynamic-nav {
+    background-color: #E8A735!important;
+    transition-duration: 1s;
+}
+
+nav, footer {
+    max-width: var(--max-width);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+nav>ul, footer>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+
+nav>ul>li {
+    padding: 5px;
+    width: 100px;
+    background-color: var(--brown);;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+nav>ul>li:hover {
+    transition-duration: 1s;
+    transform: scale(1.3);
+}
+
+nav>ul>li:hover {
+    background-color: #E8A735;
+}
+
+.section {
+    padding: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    min-width: 100px;
+    max-width: 600px;
+    margin: 10px;
+    align-self: stretch;
+}
+
+.highlited {
+    margin-top: 40px;
+    background-color: #E8A735;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.highlited:hover {
+    transform: rotate(-50deg);
+}
+
+ul>li>i {
+    width: 20px;
+    text-align: center;
+}
+
+a:link {
+    color: unset;
+  }
+
+  .section>ul>li>a:visited, footer>ul>li>a:visited {
+    color: unset;
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .section>ul>li>a:hover {
+    text-decoration: none;
+    background: #cdfeaa;
+  }
+
+  a:active {
+    background: #6900ff;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url("./assets/img/Denis.png");
+    background-size: contain;
+    overflow: hidden;
+}
+
+.photo:hover {
+    background-image: url('./assets/img/Denis_red.png');
+}
+
+h2 {
+    display: flex;
+    justify-content: right;
+  }
+
+  .title-card {
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .title-card>i {
+    line-height: unset;
+  }
+
+  .title-card-underline {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .title-card-underline::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.2px;
+    right: 0px;
+    top: 44px;
+
+    background: var(--brown);
+    border-radius: 0px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .title-card:hover {
+    color: orange;
+    transition: all 0.5s ease-in;
+  }
+
+  .title-card-underline:hover::after {
+    right: 0%;
+    width: 100%;
+    background: orange;
+    transition: all 0.5s ease-in-out;
+  }
+
+/* SUMMARY */
+
+.summary>div {
+    margin: 50px;
+}
+
+.summary>div>p {
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+/* SKILLS */
+
+.skills>div>ul {
+    padding-left: 0;
+}
+
+.skills>div {
+    margin: 0 10px;
+}
+
+/* ECPERIENCE */
+
+.employer {
+    font-weight: bold;
+    color: var(--brown);
+}
+
+.job-title {
+    font-weight: bold;
+    color: green;
+}
+
+.function {
+    color:#E8A735;
+}
+
+.const, .function {
+    color: blue;
+}
+
+.var-name {
+    color:  rgb(107, 89, 240);
+}
+
+.function-name {
+    color: goldenrod;
+}
+
+.tic {
+    color: var(--brown);
+}
+
+.bracket {
+    color: green;
+    font-weight: bold;
+}
+
+/* EDUCATION */
+
+.education-program-name {
+    font-weight: bold;
+    color: green;
+}
+
+.education-school {
+    color: var(--brown);
+}
+
+.education-platform {
+    color: goldenrod;
+}
+
+.education-year {
+    font-weight: bold;
+    color: green;
+}
+
+.education>ul>li {
+    margin-bottom: 10px;
+}
+
+ul>li>p {
+    margin-top: 4px;
+}
+
+ul>li>p>span {
+    padding: 0 3px;
+    border: 1px solid var(--brown);;
+    border-radius: 3px;
+}
+
+ul>li>p>span:hover {
+    background-color: var(--brown);;
+    color:antiquewhite;
+}
+
+/* FOOTER */
+
+.arrow-up {
+    width: 28px;
+    height: 21px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .arrow-up:hover {
+    opacity: 1;
+  }
+
+  .rs-school {
+    height: 20px;
+    width: 50px;
+    background-image: url('./assets/img/rs_school_js.svg');
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 1220px) {
+    .section {
+        max-width: 100%;
+    }
+  }
+
+/* NAME MAGIC */
+
+#roundedName span {
+    font: 26px Monaco, MonoSpace;
+    height: 155px;
+    position: absolute;
+    width: 20px;
+    left: 103px;
+    top: -30px;
+    transform-origin: bottom center;
+}
+
+.char0 {
+    transform: rotate(0deg);
+}
+
+.char1 {
+    transform: rotate(6deg);
+}
+
+.char2 {
+    transform: rotate(12deg);
+}
+
+.char3 {
+    transform: rotate(18deg);
+}
+
+.char4 {
+    transform: rotate(24deg);
+}
+
+.char5 {
+    transform: rotate(30deg);
+}
+
+.char6 {
+    transform: rotate(36deg);
+}
+
+.char7 {
+    transform: rotate(42deg);
+}
+
+.char8 {
+    transform: rotate(48deg);
+}
+
+.char9 {
+    transform: rotate(54deg);
+}
+
+.char10 {
+    transform: rotate(60deg);
+}
+
+.char11 {
+    transform: rotate(66deg);
+}
+
+.char12 {
+    transform: rotate(72deg);
+}
+
+.char13 {
+    transform: rotate(78deg);
+}
+
+.char14 {
+    transform: rotate(84deg);
+}
+
+.char15 {
+    transform: rotate(90deg);
+}
+
+.char16 {
+    transform: rotate(96deg);
+}
+
+.char17 {
+    transform: rotate(102deg);
+}
+
+.char18 {
+    transform: rotate(108deg);
+}
