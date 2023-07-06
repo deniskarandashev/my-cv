@@ -45,14 +45,6 @@ nav>ul>li>a {
     color: antiquewhite!important;
 }
 
-/* .container {
-    width: 1200px;
-    margin: 10px auto;
-    border: 1px dashed green;
-    background-color: beige;
-    border-radius: 10px;
-} */
-
 main {
     max-width: var(--max-width);
     margin: 10px auto;
@@ -86,7 +78,7 @@ main {
 }
 
 .dynamic-nav {
-    background-color: #E8A735;
+    background-color: #E8A735!important;
     transition-duration: 1s;
 }
 
@@ -161,22 +153,16 @@ a:link {
     color: unset;
   }
 
-  /* section>ul>li>a:visited {
-    color: unset;
-  } */
-
   .section>ul>li>a:visited, footer>ul>li>a:visited {
     color: unset;
   }
 
   a:focus {
     text-decoration: none;
-    /* background: #bae498; */
   }
 
   a:hover {
     text-decoration: none;
-    /* background: #cdfeaa; */
   }
 
   .section>ul>li>a:hover {
@@ -260,14 +246,6 @@ h2 {
     text-indent: 1.5em;
     text-align: justify;
 }
-/*
-.summary {
-    max-width: 100%;
-}
-
-.projects {
-    width:max-content;
-} */
 
 /* SKILLS */
 
@@ -290,12 +268,6 @@ h2 {
     font-weight: bold;
     color: green;
 }
-
-/* CODE */
-
-/* pre {
-    font-weight: bold;
-} */
 
 .function {
     color:#E8A735;
@@ -384,7 +356,6 @@ ul>li>p>span:hover {
 
   .arrow-up:hover {
     opacity: 1;
-    /* background-color: #555; */
   }
 
   .rs-school {
