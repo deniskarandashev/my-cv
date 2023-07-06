@@ -1,10 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NP19X3Y36E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NP19X3Y36E');
+    </script>
+    <script src="https://use.fontawesome.com/ddd3f56aa9.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body></body>
+<body>
+    <header class="header">
+        <nav class="container">
+            <ul>
+                <li onclick="onNavItemClick('#contacts')" id="nav_contacts"><a href="#contacts">Contacts</a></li>
+                <li onclick="onNavItemClick('#languages')" id="nav_languages"><a href="#languages">Languages</a></li>
+                <li onclick="onNavItemClick('#summary')" id="nav_summary"><a href="#summary">Summary</a></li>
+                <li onclick="onNavItemClick('#skills')" id="nav_skills"><a href="#skills">Skills</a></li>
+                <li onclick="onNavItemClick('#code')" id="nav_code"><a href="#code">Code</a></li>
+                <li onclick="onNavItemClick('#projects')" id="nav_projects"><a href="#projects">Projects</a></li>
+                <li onclick="onNavItemClick('#experience')" id="nav_experience"><a href="#experience">Experience</a>
+                </li>
+                <li onclick="onNavItemClick('#education')" id="nav_education"><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container dynamic highlited">
+            <h1 hidden>Denis Karandashev</h1>
+            <div id="roundedName">
+                <div class="photo"></div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contacts" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Contacts</h2>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <a
+                        href="https://goo.gl/maps/HAYWUWJkza3cZb4X9">Thessaloniki, Greece</a></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i> <a
+                        href="https://www.linkedin.com/in/denis-karandashev/">Denis Karandashev</a></li>
+                <li><i class="fa fa-telegram" aria-hidden="true"></i> <a
+                        href="https://t.me/DenisKarandashev">@DenisKarandashev</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a
+                        href="mailto:denis.karandashev@gmail.com">denis.karandashev@gmail.com</a></li>
+                <li>Discord: denis_k_</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Languages</h2>
+            <ul>
+                <li>
+                    <span>English</span>
+                    <span>B1-B2</span>
+                </li>
+                <li>
+                    <span>French</span>
+                    <span>A1-A2</span>
+                </li>
+                <li>
+                    <span>Russian</span>
+                    <span>C2</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary" class="container section dynamic card summary">
+            <h2 class="title-card title-card-underline">Summary</h2>
+            <div>
+                <p>I am currently Software Developer at DT CS (see the section 'Experience' for more details). On
+                    current projects, a significant part of the time is spent working with Angular.</p>
+                <p>Before I decided to become a programmer, I worked for about 10 years as a lawyer and business
+                    consultant
+                    (finance, insurance, commercial and civil law).</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Skills</h2>
+            <ul>
+                <li><span class="li-header">Back: </span>Java 7-17, Spring, SQL</li>
+                <li><span class="li-header">Front: </span>Angular 2+, JavaScript, TypeScript, HTML, CSS</li>
+                <li><span class="li-header">Tools: </span>Intellij IDEA, VSCode, Jira, GIT, Figma</li>
+                <li><span class="li-header">Also: </span>Agile, Scrum, English</li>
+            </ul>
+        </section>
+
+        <!-- Code -->
+        <section id="code" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Code</h2>
+            <pre>
+            <span class="const">const</span> <span class="var-name">myName</span> = <span class="tic">'Denis'</span>;
+            <span class="function">function</span> <span class="function-name">greeting</span><span class="bracket">(</span><span>name</span><span class="bracket">)</span> <span class="curly">{</span>
+                <span>console</span>.<span></span><span>log</span><span class="bracket">(</span><span class="tic">'Hello, I am %s'</span>, name<span class="bracket">)</span>;
+            <span class="curly">}</span>
+            <span class="function-name">greeting</span><span class="bracket">(</span><span>myName</span><span class="bracket">)</span>;
+            </pre>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Projects</h2>
+            <ul class="flex-row">
+                <li>
+                    <a
+                        href="https://deniskarandashev.github.io/Specializations/Yandex/html_css_base/cartoon/index.html">
+                        Cartoon with html and css
+                    </a>
+                    <p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </p>
+                </li>
+                <li>
+                    <a
+                        href="https://deniskarandashev.github.io/Courses/JS_HTML_CSS_John_Hopkins_University/module2-solution/">
+                        Simple responsive (desktop-mobile-tablet) template
+                    </a>
+                    <p>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Flex (CSS)</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="container section dynamic card">
+            <h2 class="title-card title-card-underline">Experience</h2>
+            <ul class="experience">
+                <li>
+                    from 01/2023:
+                    <br>
+                    <span class="employer">Deutsche Telekom Cloud Services</span>
+                    <br>
+                    as
+                    <span class="job-title">Software Developer</span>
+                    <p>
+                        <span>Angular 13</span>
+                        <span>Java 17</span>
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    from 03/2021 to 12/2022:
+                    <br>
+                    <span class="employer">T-Systems RUS</span>
+                    <br>
+                    as
+                    <span class="job-title">Software Developer</span>
+                    <p>
+                        <span>Angular 13</span>
+                        <span>Java 8</span>
+                        <span>Spring</span>
+                        <span>OracleDB</span>
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    from 09/2020 to 03/2021:<br>
+                    <span class="employer">Deutsche Telekom IT Solutions RUS</span>
+                    <br>
+                    as
+                    <span class="job-title">Junior Software Developer</span>
+                    <p>
+                        <span>React</span>
+                        <span>Thymeleaf</span>
+                        <span>Java 8</span>
+                        <span>Spring</span>
+                        <span>PostgresQL</span>
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    from 03/202 to 09/2020:
+                    <br>
+                    <span class="employer">EPAM Systems</span>
+                    <br>
+                    as
+                    <span class="job-title">Java Developer Trainee</span>
+                    <p>
+                        <span>Java 7</span>
+                        <span>Spring</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="container section dynamic card education">
+            <h2 class="title-card title-card-underline">Education</h2>
+            <ul>
+                <li>
+                    <span class="education-program-name">Angular</span>
+                    <span class="education-school">JavaScript.info</span>
+                    <span class="education-year">2022</span>
+                    <p>
+                        <span>Angular 13</span>
+                    </p>
+                </li>
+                <li>
+                    <span class="education-program-name">Client Needs and Software Requirements</span>
+                    <span class="education-school">University of Alberta</span>
+                    <span class="education-platform">Coursera</span>
+                    <span class="education-year">2022</span>
+                </li>
+                <li>
+                    <span class="education-program-name">HTML, CSS, and Javascript for Web Developers</span>
+                    <span class="education-school">Johns Hopkins University</span>
+                    <span class="education-platform">Coursera</span>
+                    <span class="education-year">2022</span>
+                    <p>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </p>
+                </li>
+                <li>
+                    <span class="education-program-name">Web development basics</span>
+                    <span class="education-school">Kursk State University</span>
+                    <span class="education-year">2020</span>
+                    <p>
+                        <span>Python 3</span>
+                        <span>Django </span>
+                    </p>
+                </li>
+                <li>
+                    <span class="education-program-name">Modern technologies for the development and design of graphic
+                        applications</span>
+                    <span class="education-school">Yaroslavl State University</span>
+                    <span class="education-year">2020</span>
+                    <p>
+                        <span>Java 8</span>
+                        <span>JavaFX</span>
+                    </p>
+                </li>
+                <li>
+                    <span class="education-program-name">Java programmer specialization</span>
+                    <span class="education-school">GeekBrains, Mail.ru</span>
+                    <span class="education-year">2020</span>
+                    <p>
+                        <span>Java 8</span>
+                        <span>GIT</span>
+                        <span>SQL</span>
+                        <span>Algorithms</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <div onclick="goToTop()" class="arrow-up">Up!</div>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/deniskarandashev">GitHub</a>
+            </li>
+            <li>2023</li>
+            <li><a href="https://rs.school/js/">
+                    <div class="rs-school"></div>
+                </a></li>
+        </ul>
+    </footer>
+    <script src="./index.js"></script>
+</body>
 </html>
